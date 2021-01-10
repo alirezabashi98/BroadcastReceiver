@@ -41,15 +41,20 @@ class myBrodcast() : BroadcastReceiver() {
 </div>
 خب حالا هر کاری که میخوایم انجام بشه بعد اون اطفاق مثلا گفتیم حواست به حالت هواپیما باشه
 
+<div dir="ltr">
+
 ```
 "android.intent.action.AIRPLANE_MODE"
 ```
+
+</div>
+
 حالا حالت هواپیما فعال بشه یا غیر فعال متد onReceive فراخوانی میشه فقط قبلش باید داخل اندروید منی فیست کد های زیر گذاشتنه شده باشه که بهش بگشم حواسش به چی باشه
 
-```
 <div dir="ltr">
          
-        <receiver
+```
+<receiver
             android:enabled="true"
             android:exported="true"
             android:name=".myBrodcast">
@@ -57,10 +62,9 @@ class myBrodcast() : BroadcastReceiver() {
                 <action android:name="android.intent.action.AIRPLANE_MODE"/>
             </intent-filter>
         </receiver>
-        
-</div>
 ```
 
+</div>
 یا داخل یه اکتیویتی به شکل زیر بهش بگیم حواسش به چی باشه
 <div dir="ltr">
 
