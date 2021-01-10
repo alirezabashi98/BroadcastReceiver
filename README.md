@@ -86,13 +86,13 @@ this.registerReceiver(myBrodcast(this), IntentFilter("android.intent.action.AIRP
 
 نکته 3 : برای درک نکته دوم پروژه کلون کنید و داخل مین اکتیویتی نگاه کنیدداخل متد onStart مقدار دهی کردم
 
-یا داخل یه اکتیویتی به شکل زیر بهش بگیم حواسش به چی باشه
+داخل یه اکتیویتی به شکل زیر بهش بگیم حواسش به چی باشه
 </div>
 
 <div dir="ltr">
 
 ```
-this.registerReceiver(myBrodcast(this), IntentFilter("android.intent.action.AIRPLANE_MODE"))
+this.registerReceiver(myBrodcast(), IntentFilter("android.intent.action.AIRPLANE_MODE"))
 ```
 
 </div>
