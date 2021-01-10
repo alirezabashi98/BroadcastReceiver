@@ -10,25 +10,37 @@
 
 اول لازمه یه کلاس درست کنیم مثلا کلاسی به اسم myBrodcast میسازم مثل کد زیر
 <div dir="ltr">
-class myBrodcast(){}
+         
+class myBrodcast(){
+
+}
+
 </div>
 خب حالا باید ارث بری کنه  ازBroadcastReceiver به شکل زیر
 <div dir="ltr">
+         
 class myBrodcast() : BroadcastReceiver() {
+         
 }
+
 </div>
 خب حالا یه متد داره  باید اورایدش کنیم به شکل زیر
 
 <div dir="ltr">
+         
 class myBrodcast() : BroadcastReceiver() {
          override fun onReceive(context: Context?, intent: Intent?) {{
+         
+         
 }
+
 </div>
 خب حالا هر کاری که میخوایم انجام بشه بعد اون اطفاق مثلا گفتیم حواست به حالت هواپیما باشه
 "android.intent.action.AIRPLANE_MODE"
 حالا حالت هواپیما فعال بشه یا غیر فعال متد onReceive فراخوانی میشه فقط قبلش باید داخل اندروید منی فیست کد های زیر گذاشتنه شده باشه که بهش بگشم حواسش به چی باشه
 
 <div dir="ltr">
+         
         <receiver
             android:enabled="true"
             android:exported="true"
@@ -37,10 +49,14 @@ class myBrodcast() : BroadcastReceiver() {
                 <action android:name="android.intent.action.AIRPLANE_MODE"/>
             </intent-filter>
         </receiver>
+        
 </div>
+
 یا داخل یه اکتیویتی به شکل زیر بهش بگیم حواسش به چی باشه
 <div dir="ltr">
+         
 this.registerReceiver(myBrodcast(this), IntentFilter("android.intent.action.AIRPLANE_MODE"))
+
 </div>
 خب اینجا هواسش به حالت هواپیماست
 
