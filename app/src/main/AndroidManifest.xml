@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.airplane">
+
+<!--    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>-->
+<!--    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>-->
+
+<!--    Activity Action: Show settings to allow entering/exiting airplane mode.-->
+<!--    <uses-permission android:name="ACTION_AIRPLANE_MODE_SETTINGS"/>-->
+
+<!--    Activity Action: Modify Airplane mode settings using a voice command.-->
+<!--    <uses-permission android:name="ACTION_VOICE_CONTROL_AIRPLANE_MODE"/>-->
+
+
+<!--    Activity Extra: Enable or disable Airplane Mode.-->
+<!--    <uses-permission android:name="EXTRA_AIRPLANE_MODE_ENABLED"/>-->
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Airplane">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<!--        <receiver-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true"-->
+<!--            android:name=".myBrodcast">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.AIRPLANE_MODE"/>-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+    </application>
+
+</manifest>
