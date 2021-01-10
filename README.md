@@ -10,6 +10,7 @@
 
 اول لازمه یه کلاس درست کنیم مثلا کلاسی به اسم myBrodcast میسازم مثل کد زیر
 <div dir="ltr">
+
 ```
 class myBrodcast(){
 
@@ -18,15 +19,18 @@ class myBrodcast(){
 </div>
 خب حالا باید ارث بری کنه  ازBroadcastReceiver به شکل زیر
 <div dir="ltr">
+
 ```
 class myBrodcast() : BroadcastReceiver() {
          
 }
+
 ```
 </div>
 خب حالا یه متد داره  باید اورایدش کنیم به شکل زیر
 
 <div dir="ltr">
+
 ```
 class myBrodcast() : BroadcastReceiver() {
          override fun onReceive(context: Context?, intent: Intent?) {{
