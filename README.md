@@ -82,4 +82,16 @@ this.registerReceiver(myBrodcast(this), IntentFilter("android.intent.action.AIRP
 
 نکته : بعضی وقتا باید یه دسترسی های بدیم
 
+نکته دوم : لازم نیست به برود کست this بدید من اینجا داخل پروژه یه اینترفیست گذاشتم برای همین داخل کانسرکتور برد کست اون اینترفیست میخواد و من this دادم شما به شکل پایین مقدار دهی کنید داخل اکتیویتی راستی فقط یا داخل اکتتیویتی یا منفیست یکیش تعریف کنید تمومه
+
+</div>
+یا داخل یه اکتیویتی به شکل زیر بهش بگیم حواسش به چی باشه
+<div dir="ltr">
+
+```
+this.registerReceiver(myBrodcast(this), IntentFilter("android.intent.action.AIRPLANE_MODE"))
+```
+
+</div>
+
 </div>
